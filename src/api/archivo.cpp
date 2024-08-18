@@ -1,11 +1,30 @@
 #include <iostream>
 #include <fstream>
-#include <string>
-#include "../estructuras.h"
 
 using namespace std;
 
-void pregunta2(string ArchivoAlumnos) {
+typedef unsigned char Byte;
+typedef unsigned short Word;
+typedef unsigned int Cardinal;
+
+struct Fecha
+{
+    Byte dia;
+    Byte mes;
+    Word anio;
+};
+
+struct RegistroAlumno
+{
+    Byte marca;
+    Word codigo;
+    char nombre[31];
+    char direccion[26];
+    Fecha fechaNacimiento;
+    Cardinal telefono;
+};
+
+void ordenar_registro(string ArchivoAlumnos) {
     string temp = "Alumnos.tmp";
 
     RegistroAlumno registroAlumno;

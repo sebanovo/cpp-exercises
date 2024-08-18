@@ -4,7 +4,6 @@ Repositorio de ejercicios de c++
 
 ## Requisitos
 
-- mysys2 
 - vscode 
-- make
-- g++ (compilador)
+- mysys2 (toolchain)
+- cmake
